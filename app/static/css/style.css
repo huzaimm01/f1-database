@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #003366; /* Navy Blue */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.race-form input, .race-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.race-form input[type="date"], .race-form input[type="number"] {
+    padding-left: 10px;
+}
+
+.submit-btn {
+    background: #0055ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 14px;
+}
+
+.submit-btn:hover {
+    background: #003bb5;
+}
+
+.submit-btn:active {
+    background: #003285;
+}
+
+/* Card Text Styles */
+h2 {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #444;
+}
+
+/* Query Box Styling */
+.query-box {
+    margin-bottom: 20px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.query-box input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.query-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.query-box button:hover {
+    background-color: #004d40;
+}
+
+.query-box button:active {
+    background-color: #00332a;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

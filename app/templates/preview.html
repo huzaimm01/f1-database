@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview Race</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="preview-container">
+        <h1>Review Race Details</h1>
+
+        <div class="race-card">
+            <p><strong>Season:</strong> {{ race.season }}</p>
+            <p><strong>Grand Prix:</strong> {{ race.grandPrix }}</p>
+            <p><strong>Date:</strong> {{ race.date }}</p>
+            <p><strong>Winner:</strong> {{ race.winner.driverName }} ({{ race.winner.teamName }})</p>
+            <p><strong>Winning Constructor:</strong> {{ race.winningConstructor }}</p>
+            <p><strong>Laps:</strong> {{ race.laps }}</p>
+            <p><strong>Race Time:</strong> {{ race.raceTime }}</p>
+            <p><strong>Fastest Lap Driver:</strong> {{ race.fastestLap.driverName }}</p>
+            <p><strong>Fastest Lap Time:</strong> {{ race.fastestLap.lapTime }}</p>
+        </div>
+
+        <div class="buttons">
+            <a href="{{ url_for('main.approve_race') }}"><button class="approve-btn">Approve and Save</button></a>
+            <a href="{{ url_for('main.cancel_race') }}"><button class="cancel-btn">Cancel</button></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
