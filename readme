@@ -1,0 +1,4 @@
+## F1 Database:
+
+Has all the data from every F1 race from 1950 to 2024, with frequent updates to keep it current. It has a flask app where you can enter queries to get results, such as "Who won the most races between 2015 and 2023"
+Also features Race, Point and WDC/WCC Projections based on team strength and current results.
