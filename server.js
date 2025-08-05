@@ -13,6 +13,12 @@ const DATABASE_NAME = 'F1DB';
 
 let db;
 
+async function startServer() {
+  try {
+    const client = await MongoClient.connect(MONGODB_URI);
+    db = client.db(DATABASE_NAME);
+    console.log('✅ Connected to MongoDB');
+    
 // Connection to Mongo
 MongoClient.connect(MONGODB_URI)
   .then(client => {
